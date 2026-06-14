@@ -14,7 +14,6 @@ function Navbar() {
 
       <div style={styles.icons}>
         <span>in</span>
-        <span>gh</span>
       </div>
     </nav>
   );
