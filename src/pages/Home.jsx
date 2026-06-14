@@ -32,7 +32,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: "80px 10%",
+    padding: "120px 10% 80px",
     minHeight: "80vh",
     backgroundColor: "#f8fafc",
   },
@@ -54,10 +54,11 @@ const styles = {
   },
 
   name: {
-    fontSize: "80px",
+    fontSize: "90px",
     fontWeight: "700",
     margin: "0",
     color: "#111827",
+    lineHeight: "1.1"
   },
 
   role: {
@@ -79,7 +80,8 @@ const styles = {
     width: "350px",
     height: "450px",
     objectFit: "cover",
-    borderRadius: "10px",
+    borderRadius: "12px",
+    boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
   },
 };
 

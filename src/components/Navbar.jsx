@@ -19,14 +19,17 @@ function Navbar() {
 
 const styles = {
   nav: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "20px 10%",
-    backgroundColor: "#ffffff",
-    borderBottom: "1px solid #e5e7eb",
-    position: "sticky",
-    top: 0,
+
+    padding: "25px 10%",
+    backgroundColor: "transparent",
     zIndex: 1000,
   },
 
@@ -42,11 +45,9 @@ const styles = {
   },
 
   link: {
+    color: "#111827",
     textDecoration: "none",
-    color: "#374151",
-    fontSize: "16px",
-    fontWeight: "400",
-    transition: "0.2s",
+    fontSize: "15px",
   },
 };
 

@@ -117,7 +117,7 @@ const styles = {
   },
 
   card: {
-    backgroundColor: "#020617",
+    backgroundColor: "#ffffff",
     padding: "25px",
     borderRadius: "15px",
     width: "300px",
@@ -129,7 +129,7 @@ const styles = {
   description: {
     marginTop: "10px",
     lineHeight: "1.5",
-    color: "#cbd5f5",
+    color: "#4b5563",
   },
 
   techStack: {
@@ -139,8 +139,8 @@ const styles = {
 
   tag: {
     display: "inline-block",
-    backgroundColor: "#0f172a",
-    color: "#38bdf8",
+    backgroundColor: "#f1f5f9",
+    color: "#0ea5e9",
     padding: "6px 12px",
     borderRadius: "6px",
     marginRight: "8px",
