@@ -3,7 +3,7 @@ import profile from "../assets/profile.jpg";
 function Home() {
   return (
     <div>
-      {/* HERO */}
+      {/* ===== HERO ===== */}
       <section style={styles.hero}>
         <div style={styles.left}>
           <p style={styles.smallText}>Hello, I’m</p>
@@ -20,59 +20,36 @@ function Home() {
         </div>
       </section>
 
-      {/* PROJECTS GRID */}
-      <section style={styles.projectsSection}>
-        <h2 style={styles.projectsTitle}>My Projects</h2>
-        <p style={styles.projectsSubtitle}>
-          A selection of my recent work in full stack development.
+      {/* ===== ABOUT SECTION ===== */}
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>About Me</h2>
+
+        <p style={styles.text}>
+          I am a Software Engineering Technology graduate with a strong
+          interest in full stack development. I have experience working in
+          fast-paced environments supporting and coordinating technology
+          projects.
         </p>
 
-        <div style={styles.grid}>
-          {/* Project 1 */}
-          <div
-            style={styles.projectItem}
-            onMouseOver={(e) => {
-              e.currentTarget.querySelector(".overlay").style.opacity = 1;
-              e.currentTarget.querySelector("img").style.transform = "scale(1.1)";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.querySelector(".overlay").style.opacity = 0;
-              e.currentTarget.querySelector("img").style.transform = "scale(1)";
-            }}
-          >
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="Portfolio"
-              style={styles.projectImage}
-            />
-            <div className="overlay" style={styles.overlay}>
-              <h3>Portfolio Website</h3>
-              <p>React</p>
-            </div>
-          </div>
+        <p style={styles.text}>
+          My technical skills include React, JavaScript, Node.js, and building
+          APIs. I enjoy solving problems and creating applications that provide
+          real value to users.
+        </p>
+      </section>
 
-          {/* Project 2 */}
-          <div
-            style={styles.projectItem}
-            onMouseOver={(e) => {
-              e.currentTarget.querySelector(".overlay").style.opacity = 1;
-              e.currentTarget.querySelector("img").style.transform = "scale(1.1)";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.querySelector(".overlay").style.opacity = 0;
-              e.currentTarget.querySelector("img").style.transform = "scale(1)";
-            }}
-          >
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="API"
-              style={styles.projectImage}
-            />
-            <div className="overlay" style={styles.overlay}>
-              <h3>REST API</h3>
-              <p>Node.js</p>
-            </div>
-          </div>
+      {/* ===== CONTACT SECTION ===== */}
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>Contact Me</h2>
+
+        <p style={styles.text}>
+          Feel free to reach out for opportunities or collaborations.
+        </p>
+
+        <div style={{ marginTop: "20px" }}>
+          <a href="mailto:your@email.com" className="button">
+            Email Me
+          </a>
         </div>
       </section>
     </div>
@@ -84,103 +61,73 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    flexWrap: "wrap",
-    minHeight: "90vh",
-    maxWidth: "1200px",
-    margin: "0 auto",
-    padding: "80px 40px",
+    padding: "80px 10%",
+    minHeight: "80vh",
+    backgroundColor: "#f5efe6",
   },
 
   left: {
     flex: 1,
-    minWidth: "300px",
   },
 
   right: {
     flex: 1,
     display: "flex",
     justifyContent: "center",
-    minWidth: "300px",
   },
 
   smallText: {
     fontSize: "20px",
     color: "#64748b",
+    marginBottom: "10px",
   },
 
   name: {
-    fontSize: "70px",
-    margin: "10px 0",
+    fontSize: "80px",
+    fontWeight: "700",
+    margin: "0",
     color: "#111827",
   },
 
   role: {
-    fontSize: "30px",
+    fontSize: "36px",
+    fontWeight: "400",
+    marginTop: "10px",
     color: "#374151",
   },
 
   link: {
     display: "inline-block",
-    marginTop: "25px",
+    marginTop: "30px",
     fontSize: "18px",
-    textDecoration: "underline",
     color: "#111827",
+    textDecoration: "underline",
   },
 
   image: {
-    width: "100%",
-    maxWidth: "320px",
+    width: "350px",
+    height: "450px",
+    objectFit: "cover",
     borderRadius: "12px",
   },
 
-  /* PROJECTS */
-  projectsSection: {
-    padding: "100px 40px",
-    maxWidth: "1200px",
-    margin: "0 auto",
+  section: {
+    padding: "80px 10%",
+    backgroundColor: "#f8fafc",
     textAlign: "center",
   },
 
-  projectsTitle: {
-    fontSize: "40px",
-    marginBottom: "10px",
+  sectionTitle: {
+    fontSize: "32px",
+    marginBottom: "20px",
+    color: "#111827",
   },
 
-  projectsSubtitle: {
-    color: "#6b7280",
-    marginBottom: "50px",
-  },
-
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-    gap: "30px",
-  },
-
-  projectItem: {
-    position: "relative",
-    overflow: "hidden",
-    borderRadius: "10px",
-    cursor: "pointer",
-  },
-
-  projectImage: {
-    width: "100%",
-    height: "250px",
-    objectFit: "cover",
-    transition: "0.3s",
-  },
-
-  overlay: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    background: "rgba(0,0,0,0.6)",
-    color: "#fff",
-    padding: "20px",
-    opacity: 0,
-    transition: "0.3s",
+  text: {
+    maxWidth: "700px",
+    margin: "0 auto",
+    lineHeight: "1.6",
+    color: "#374151",
   },
 };
 
