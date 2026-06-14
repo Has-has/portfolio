@@ -38,7 +38,7 @@ function Projects() {
               href="https://github.com/Has-has/portfolio"
               target="_blank"
               rel="noopener noreferrer"
-              style={styles.button}
+              className="button"
             >
               View Code
             </a>
@@ -86,7 +86,7 @@ function Projects() {
               href="https://github.com/yourusername/rest-api"
               target="_blank"
               rel="noopener noreferrer"
-              style={styles.button}
+              className="button"
             >
               View Code
             </a>
@@ -141,8 +141,8 @@ const styles = {
     display: "inline-block",
     backgroundColor: "#0f172a",
     color: "#38bdf8",
-    padding: "5px 10px",
-    borderRadius: "5px",
+    padding: "6px 12px",
+    borderRadius: "6px",
     marginRight: "8px",
     fontSize: "0.8rem",
   },
