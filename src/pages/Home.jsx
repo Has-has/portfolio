@@ -2,42 +2,64 @@ import profile from "../assets/profile.jpg";
 
 function Home() {
   return (
-    <div style={styles.hero}>
-      {/* LEFT SIDE */}
-      <div style={styles.left}>
-        <p style={styles.smallText}>Hello, I’m</p>
+    <div>
+      {/* HERO SECTION */}
+      <section style={styles.hero}>
+        <div style={styles.left}>
+          <p style={styles.smallText}>Hello, I’m</p>
+          <h1 style={styles.name}>Hasan</h1>
+          <h2 style={styles.role}>Full Stack Developer</h2>
 
-        <h1 style={styles.name}>Hasan</h1>
+          <a href="/resume.pdf" style={styles.link}>
+            Download Resume
+          </a>
+        </div>
 
-        <h2 style={styles.role}>Full Stack Developer</h2>
+        <div style={styles.right}>
+          <img src={profile} alt="Hasan" style={styles.image} />
+        </div>
+      </section>
 
-        <a
-          href="/resume.pdf" // later we can add real resume
-          style={styles.link}
-        >
-          Download Resume
-        </a>
-      </div>
+      {/* ABOUT SECTION */}
+      <section style={styles.section}>
+        <h2>About Me</h2>
+        <p style={styles.text}>
+          I am a Software Engineering Technology graduate focused on building
+          modern full stack applications using React, Node.js, and APIs.
+        </p>
+      </section>
 
-      {/* RIGHT SIDE */}
-      <div style={styles.right}>
-        <img src={profile} alt="Hasan" style={styles.image} />
-      </div>
+      {/* PROJECTS SECTION */}
+      <section style={styles.section}>
+        <h2>Featured Projects</h2>
+        <p style={styles.text}>
+          Explore my work including full stack applications, APIs, and modern web interfaces.
+        </p>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <section style={styles.section}>
+        <h2>Contact</h2>
+        <p style={styles.text}>
+          Feel free to reach out for opportunities or collaboration.
+        </p>
+      </section>
     </div>
   );
 }
 
 const styles = {
   hero: {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
-  flexWrap: "wrap",
-  width: "100%",
-  maxWidth: "1200px",
-  margin: "0 auto",
-  padding: "120px 20px 80px",
-},
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
+    minHeight: "90vh",
+
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "80px 40px",
+  },
 
   left: {
     flex: 1,
@@ -54,35 +76,44 @@ const styles = {
   smallText: {
     fontSize: "20px",
     color: "#64748b",
-    marginBottom: "10px",
   },
 
   name: {
-  fontSize: "64px",
-  fontWeight: "700",
-  margin: "0",
-  color: "#111827",
-},
+    fontSize: "70px",
+    margin: "10px 0",
+    color: "#111827",
+  },
 
-role: {
-  fontSize: "28px",
-  marginTop: "10px",
-  color: "#374151",
-},
+  role: {
+    fontSize: "30px",
+    color: "#374151",
+  },
 
   link: {
     display: "inline-block",
-    marginTop: "30px",
+    marginTop: "25px",
     fontSize: "18px",
-    color: "#111827",
     textDecoration: "underline",
+    color: "#111827",
   },
 
   image: {
     width: "100%",
     maxWidth: "320px",
-    height: "auto",
     borderRadius: "12px",
+  },
+
+  section: {
+    padding: "100px 20px",
+    maxWidth: "900px",
+    margin: "0 auto",
+    textAlign: "center",
+  },
+
+  text: {
+    marginTop: "20px",
+    lineHeight: "1.6",
+    color: "#374151",
   },
 };
 
