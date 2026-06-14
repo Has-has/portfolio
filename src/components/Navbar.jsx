@@ -46,7 +46,7 @@ const styles = {
 
   link: {
     textDecoration: "none",
-    color: "#111827",
+    color: "#374151",
     fontSize: "16px",
     fontWeight: "400",
   },
