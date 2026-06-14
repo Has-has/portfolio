@@ -10,7 +10,17 @@ function Projects() {
         onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}>
           <h3>Portfolio Website</h3>
           <p>Built using React, JavaScript, HTML, and CSS.</p>
-          <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+          <a   href="https://your-vercel-link.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+             display: "inline-block",
+             marginTop: "10px",
+             color: "#38bdf8"
+            }}
+          >
+            Live Demo
+          </a>
         </div>
 
         {/* Project 2 */}
