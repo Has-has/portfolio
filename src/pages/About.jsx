@@ -1,10 +1,11 @@
+import profile from "../assets/profile.jpg";
 function About() {
   return (
     <section style={styles.container}>
       {/* LEFT IMAGE */}
       <div style={styles.left}>
         <img
-          src="../assets/profile.jpg" // you can replace later
+          src={profile}
           alt="about"
           style={styles.image}
         />
