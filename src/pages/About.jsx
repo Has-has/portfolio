@@ -4,7 +4,7 @@ function About() {
       {/* LEFT IMAGE */}
       <div style={styles.left}>
         <img
-          src="https://via.placeholder.com/400x400" // you can replace later
+          src="profile.jpg" // you can replace later
           alt="about"
           style={styles.image}
         />
