@@ -8,9 +8,9 @@ function Projects() {
         <div
           style={styles.card}
           onMouseOver={(e) => {
-            e.currentTarget.style.transform = "translateY(-8px)";
-            e.currentTarget.style.boxShadow =
-              "0 20px 40px rgba(56, 189, 248, 0.2)";
+          e.currentTarget.style.transform = "translateY(-8px)";
+          e.currentTarget.style.boxShadow =
+          "0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(56, 189, 248, 0.3)";
           }}
           onMouseOut={(e) => {
             e.currentTarget.style.transform = "translateY(0)";
@@ -58,9 +58,9 @@ function Projects() {
         <div
           style={styles.card}
           onMouseOver={(e) => {
-            e.currentTarget.style.transform = "translateY(-8px)";
-            e.currentTarget.style.boxShadow =
-              "0 20px 40px rgba(56, 189, 248, 0.2)";
+          e.currentTarget.style.transform = "translateY(-8px)";
+          e.currentTarget.style.boxShadow =
+          "0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(56, 189, 248, 0.3)";
           }}
           onMouseOut={(e) => {
             e.currentTarget.style.transform = "translateY(0)";
