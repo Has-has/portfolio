@@ -3,7 +3,7 @@ function Contact() {
     <section style={styles.container}>
       {/* LEFT SIDE - FORM */}
       <div style={styles.left}>
-        <h2 style={styles.title}>Contact Form</h2>
+        <h2 style={styles.title}>CONTACT FORM</h2>
 
         <form style={styles.form}>
           <input type="text" placeholder="Name" style={styles.input} />
@@ -11,13 +11,13 @@ function Contact() {
           <textarea placeholder="Message" style={styles.textarea}></textarea>
 
           <button type="submit" style={styles.button}>
-            Send
+            SEND
           </button>
         </form>
 
         {/* QUICK CONTACT */}
         <div style={styles.quick}>
-          <h3>Quick Contact</h3>
+          <h3>QUICK CONTACT</h3>
           <p><strong>Phone:</strong> +1 647 606 8671</p>
           <p><strong>Email:</strong> hasanabulaban92@gmail.com</p>
         </div>
@@ -25,7 +25,7 @@ function Contact() {
 
       {/* RIGHT SIDE */}
       <div style={styles.right}>
-        <h2 style={styles.title}>24/7 Anytime</h2>
+        <h2 style={styles.title}>24/7 ANYTIME</h2>
 
         <p style={styles.text}>
           Feel free to reach out anytime. I’m always open to discussing new
