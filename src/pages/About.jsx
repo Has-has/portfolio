@@ -4,7 +4,7 @@ function About() {
       {/* LEFT IMAGE */}
       <div style={styles.left}>
         <img
-          src="profile.jpg" // you can replace later
+          src="../assets/profile.jpg" // you can replace later
           alt="about"
           style={styles.image}
         />
