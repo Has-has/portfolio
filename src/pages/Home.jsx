@@ -56,9 +56,9 @@ const styles = {
     flexWrap: "wrap",
     minHeight: "90vh",
     backgroundColor: "#f5efe6",
-    maxWidth: "1200px",
+    Width: "100%",
     margin: "0 auto",
-    padding: "80px 40px",
+    padding: "100px 80px",
   },
 
   left: {

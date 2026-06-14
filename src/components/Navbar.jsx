@@ -3,55 +3,70 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav style={styles.nav}>
-  <div style={styles.inner}>
-    <h2 style={styles.logo}>Hasan</h2>
+      <div style={styles.logo}>
+        Hasan
+      </div>
 
-    <div style={styles.links}>
-      <Link to="/" style={styles.link}>Home</Link>
-      <Link to="/about" style={styles.link}>About</Link>
-      <Link to="/projects" style={styles.link}>Portfolio</Link>
-      <Link to="/contact" style={styles.link}>Contact</Link>
-    </div>
-  </div>
-</nav>
+      <div style={styles.menu}>
+        <Link to="/" style={styles.link}>HOME</Link>
+        <Link to="/about" style={styles.link}>ABOUT ME</Link>
+        <Link to="/projects" style={styles.link}>PORTFOLIO</Link>
+        <Link to="/contact" style={styles.link}>CONTACT</Link>
+      </div>
+
+      <div style={styles.icons}>
+        <a href="https://linkedin.com" style={styles.icon}>in</a>
+        <a href="https://github.com" style={styles.icon}>gh</a>
+      </div>
+    </nav>
   );
 }
 
 const styles = {
   nav: {
-  width: "100%",
-  backgroundColor: "#ffffff",
-  borderBottom: "1px solid #e5e7eb",
-  position: "sticky",
-  top: 0,
-  zIndex: 1000,
-},
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+
+    padding: "25px 60px",
+
+    backgroundColor: "#f5efe6",
+
+    position: "sticky",
+    top: 0,
+    zIndex: 1000,
+  },
 
   logo: {
-    fontWeight: "600",
     fontSize: "20px",
+    fontWeight: "600",
     color: "#111827",
   },
 
-  links: {
+  menu: {
     display: "flex",
-    gap: "30px",
+    gap: "50px",
   },
 
   link: {
-    color: "#111827",
     textDecoration: "none",
-    fontSize: "15px",
+    color: "#374151",
+
+    fontSize: "14px",
+    letterSpacing: "1px",
+    fontWeight: "500",
   },
 
-  inner: {
-  maxWidth: "1200px",
-  margin: "0 auto",
-  padding: "20px 40px",
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-},
+  icons: {
+    display: "flex",
+    gap: "20px",
+  },
+
+  icon: {
+    textDecoration: "none",
+    color: "#374151",
+    fontWeight: "600",
+  },
 };
 
 export default Navbar;
