@@ -28,7 +28,7 @@ const styles = {
     position: "relative",
     width: "100%",
     padding: "25px 60px",
-    backgroundColor: "#f5efe6",
+    backgroundColor: #e8dccb,
   },
 
   logo: {
