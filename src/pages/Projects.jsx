@@ -15,7 +15,7 @@ function Projects() {
           }
         >
           <h3>Portfolio Website</h3>
-          <p>Built using React, JavaScript, HTML, and CSS.</p>
+          <p>A responsive personal portfolio built with React to showcase projects,skills, and experience. Includes routing, reusable components, and deployment using Vercel.</p>
 
           <div style={{ marginTop: "15px" }}>
             <a
@@ -49,7 +49,7 @@ function Projects() {
           }
         >
           <h3>REST API</h3>
-          <p>Backend API built with Node.js and Express.</p>
+          <p>A RESTful API built with Node.js and Express, supporting CRUD operations and structured endpoints for scalable backend development.</p>
 
           <div style={{ marginTop: "15px" }}>
             <a
