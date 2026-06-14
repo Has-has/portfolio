@@ -120,7 +120,7 @@ const styles = {
     padding: "25px",
     borderRadius: "15px",
     width: "300px",
-    boxShadow: "0 10px 25px rgba(0,0,0,0.5)",
+    boxShadow: "0 10px 25px rgba(0,0,0,0.5), 0 0 0 rgba(56, 189, 248, 0)",
     transition: "all 0.3s ease",
     textAlign: "left",
   },
