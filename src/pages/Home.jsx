@@ -38,6 +38,60 @@ function Home() {
         </p>
       </section>
 
+      {/* ===== PROJECTS GRID ===== */}
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>Featured Projects</h2>
+
+        <div style={styles.projectsGrid}>
+          {/* Project 1 */}
+          <div style={styles.projectCard}>
+            <h3>Portfolio Website</h3>
+            <p style={styles.projectText}>
+              A responsive portfolio built with React showcasing projects and skills.
+            </p>
+
+            <div style={{ marginTop: "10px" }}>
+              <a
+                href="https://github.com/Has-has/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button"
+              >
+                View Code
+              </a>
+
+              <a
+                href="https://portfolio-lrn9zct1r-hasan-abulaban-s-projects.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-secondary"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          {/* Project 2 */}
+          <div style={styles.projectCard}>
+            <h3>REST API</h3>
+            <p style={styles.projectText}>
+              Backend API built with Node.js and Express supporting CRUD operations.
+            </p>
+
+            <div style={{ marginTop: "10px" }}>
+              <a
+                href="https://github.com/yourusername/rest-api"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button"
+              >
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== CONTACT SECTION ===== */}
       <section style={styles.section}>
         <h2 style={styles.sectionTitle}>Contact Me</h2>
@@ -129,6 +183,29 @@ const styles = {
     lineHeight: "1.6",
     color: "#374151",
   },
+
+  projectsGrid: {
+  display: "flex",
+  gap: "30px",
+  justifyContent: "center",
+  flexWrap: "wrap",
+  marginTop: "40px",
+},
+
+projectCard: {
+  backgroundColor: "#ffffff",
+  padding: "25px",
+  borderRadius: "12px",
+  width: "300px",
+  boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+  textAlign: "left",
+},
+
+projectText: {
+  marginTop: "10px",
+  color: "#4b5563",
+  lineHeight: "1.5",
+},
 };
 
 export default Home;
