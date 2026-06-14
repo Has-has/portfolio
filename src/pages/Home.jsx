@@ -32,9 +32,12 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: "120px 10% 80px",
+    padding: "120px 8% 80px",
     minHeight: "80vh",
     backgroundColor: "#f8fafc",
+    maxWidth: "1200px",
+    margin: "0 auto",
+    flexWrap: "wrap",
   },
 
   left: {
@@ -77,9 +80,9 @@ const styles = {
   },
 
   image: {
-    width: "350px",
-    height: "450px",
-    objectFit: "cover",
+    width: "100%",
+    maxWidth: "350px",
+    height: "auto",
     borderRadius: "12px",
     boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
   },
