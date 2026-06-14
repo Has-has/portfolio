@@ -20,7 +20,6 @@ function Contact() {
           <h3>Quick Contact</h3>
           <p><strong>Phone:</strong> +1 647 606 8671</p>
           <p><strong>Email:</strong> hasanabulaban92@gmail.com</p>
-          <p><strong>Location:</strong> Canada</p>
         </div>
       </div>
 
