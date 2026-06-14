@@ -29,6 +29,7 @@ const styles = {
     width: "100%",
     padding: "25px 60px",
     backgroundColor: "#f5efe6",
+    borderBottom: "1px solid rgba(0,0,0,0.05)",
   },
 
   logo: {
