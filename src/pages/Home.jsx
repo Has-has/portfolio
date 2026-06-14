@@ -29,25 +29,26 @@ function Home() {
 
 const styles = {
   hero: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "120px 8% 80px",
-    minHeight: "80vh",
-    backgroundColor: "#f8fafc",
-    maxWidth: "1200px",
-    margin: "0 auto",
-    flexWrap: "wrap",
-  },
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  flexWrap: "wrap",
+  width: "100%",
+  maxWidth: "1200px",
+  margin: "0 auto",
+  padding: "120px 20px 80px",
+},
 
   left: {
     flex: 1,
+    minWidth: "300px",
   },
 
   right: {
     flex: 1,
     display: "flex",
     justifyContent: "center",
+    minWidth: "300px",
   },
 
   smallText: {
@@ -57,19 +58,17 @@ const styles = {
   },
 
   name: {
-    fontSize: "90px",
-    fontWeight: "700",
-    margin: "0",
-    color: "#111827",
-    lineHeight: "1.1"
-  },
+  fontSize: "64px",
+  fontWeight: "700",
+  margin: "0",
+  color: "#111827",
+},
 
-  role: {
-    fontSize: "36px",
-    fontWeight: "400",
-    marginTop: "10px",
-    color: "#374151",
-  },
+role: {
+  fontSize: "28px",
+  marginTop: "10px",
+  color: "#374151",
+},
 
   link: {
     display: "inline-block",
@@ -81,10 +80,9 @@ const styles = {
 
   image: {
     width: "100%",
-    maxWidth: "350px",
+    maxWidth: "320px",
     height: "auto",
     borderRadius: "12px",
-    boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
   },
 };
 
