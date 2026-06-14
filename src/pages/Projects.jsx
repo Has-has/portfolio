@@ -10,7 +10,7 @@ function Projects() {
         onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}>
           <h3>Portfolio Website</h3>
           <p>Built using React, JavaScript, HTML, and CSS.</p>
-          <a   href="https://your-vercel-link.vercel.app"
+          <a   href="https://portfolio-nu-sepia-14.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -29,7 +29,13 @@ function Projects() {
         onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}>
           <h3>REST API</h3>
           <p>Backend API built with Node.js and Express.</p>
-          <a href="https://github.com/yourusername/rest-api" target="_blank">View Code</a>
+          <a   href="https://github.com/yourusername/rest-api" target="_blank" rel="noopener noreferrer" style={{
+             display: "inline-block",
+             marginTop: "10px",
+             color: "#38bdf8"
+            }}>
+            View Code
+          </a>
         </div>
       </div>
     </div>
