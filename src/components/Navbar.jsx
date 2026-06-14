@@ -8,7 +8,7 @@ function Navbar() {
       <div style={styles.menu}>
         <Link to="/" style={styles.link}>HOME</Link>
         <Link to="/about" style={styles.link}>ABOUT ME</Link>
-        <Link to="/projects" style={styles.link}>PORTFOLIO</Link>
+        <Link to="/projects" style={styles.link}>PROJECTS</Link>
         <Link to="/contact" style={styles.link}>CONTACT</Link>
       </div>
 
