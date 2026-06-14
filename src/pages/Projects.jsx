@@ -47,7 +47,7 @@ function Projects() {
               href="https://portfolio-lrn9zct1r-hasan-abulaban-s-projects.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              style={styles.buttonSecondary}
+              className="button-secondary"
             >
               Live Demo
             </a>
