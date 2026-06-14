@@ -32,9 +32,9 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: "80px 10%",
+    padding: "120px 10% 80px",
     minHeight: "80vh",
-    backgroundColor: "#f8fafc",
+    backgroundColor: "linear-gradient(135deg, #f8fafc, #e2e8f0)",
   },
 
   left: {
