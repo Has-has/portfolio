@@ -3,18 +3,27 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav style={styles.nav}>
-      <div style={styles.logo}>Hasan</div>
+      {/* Logo */}
+      <h2 style={styles.logo}>Hasan</h2>
 
-      <div style={styles.menu}>
-        <Link to="/" style={styles.link}>HOME</Link>
-        <Link to="/about" style={styles.link}>ABOUT ME</Link>
-        <Link to="/projects" style={styles.link}>PORTFOLIO</Link>
-        <Link to="/contact" style={styles.link}>CONTACT</Link>
+      {/* Links */}
+      <div style={styles.links}>
+        <Link to="/" style={styles.link}>Home</Link>
+        <Link to="/about" style={styles.link}>About</Link>
+        <Link to="/projects" style={styles.link}>Portfolio</Link>
+        <Link to="/contact" style={styles.link}>Contact</Link>
       </div>
 
-      <div style={styles.icons}>
-        <span>in</span>
-        <span>gh</span>
+      {/* LinkedIn ONLY */}
+      <div>
+        <a
+          href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.linkedin}
+        >
+          in
+        </a>
       </div>
     </nav>
   );
