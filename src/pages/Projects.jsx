@@ -10,14 +10,7 @@ function Projects() {
         onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}>
           <h3>Portfolio Website</h3>
           <p>Built using React, JavaScript, HTML, and CSS.</p>
-          <a
-             href="https://portfolio-nu-sepia-14.vercel.app/"
-             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-            </a>
-
+          <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
         </div>
 
         {/* Project 2 */}
