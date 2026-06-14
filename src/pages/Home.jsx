@@ -3,7 +3,7 @@ import profile from "../assets/profile.jpg";
 function Home() {
   return (
     <div>
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section style={styles.hero}>
         <div style={styles.left}>
           <p style={styles.smallText}>Hello, I’m</p>
@@ -20,29 +20,60 @@ function Home() {
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
-      <section style={styles.section}>
-        <h2>About Me</h2>
-        <p style={styles.text}>
-          I am a Software Engineering Technology graduate focused on building
-          modern full stack applications using React, Node.js, and APIs.
+      {/* PROJECTS GRID */}
+      <section style={styles.projectsSection}>
+        <h2 style={styles.projectsTitle}>My Projects</h2>
+        <p style={styles.projectsSubtitle}>
+          A selection of my recent work in full stack development.
         </p>
-      </section>
 
-      {/* PROJECTS SECTION */}
-      <section style={styles.section}>
-        <h2>Featured Projects</h2>
-        <p style={styles.text}>
-          Explore my work including full stack applications, APIs, and modern web interfaces.
-        </p>
-      </section>
+        <div style={styles.grid}>
+          {/* Project 1 */}
+          <div
+            style={styles.projectItem}
+            onMouseOver={(e) => {
+              e.currentTarget.querySelector(".overlay").style.opacity = 1;
+              e.currentTarget.querySelector("img").style.transform = "scale(1.1)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.querySelector(".overlay").style.opacity = 0;
+              e.currentTarget.querySelector("img").style.transform = "scale(1)";
+            }}
+          >
+            <img
+              src="https://via.placeholder.com/400x300"
+              alt="Portfolio"
+              style={styles.projectImage}
+            />
+            <div className="overlay" style={styles.overlay}>
+              <h3>Portfolio Website</h3>
+              <p>React</p>
+            </div>
+          </div>
 
-      {/* CONTACT SECTION */}
-      <section style={styles.section}>
-        <h2>Contact</h2>
-        <p style={styles.text}>
-          Feel free to reach out for opportunities or collaboration.
-        </p>
+          {/* Project 2 */}
+          <div
+            style={styles.projectItem}
+            onMouseOver={(e) => {
+              e.currentTarget.querySelector(".overlay").style.opacity = 1;
+              e.currentTarget.querySelector("img").style.transform = "scale(1.1)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.querySelector(".overlay").style.opacity = 0;
+              e.currentTarget.querySelector("img").style.transform = "scale(1)";
+            }}
+          >
+            <img
+              src="https://via.placeholder.com/400x300"
+              alt="API"
+              style={styles.projectImage}
+            />
+            <div className="overlay" style={styles.overlay}>
+              <h3>REST API</h3>
+              <p>Node.js</p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
@@ -55,9 +86,9 @@ const styles = {
     justifyContent: "space-between",
     flexWrap: "wrap",
     minHeight: "90vh",
-    Width: "100%",
+    maxWidth: "1200px",
     margin: "0 auto",
-    padding: "100px 80px",
+    padding: "80px 40px",
   },
 
   left: {
@@ -102,17 +133,54 @@ const styles = {
     borderRadius: "12px",
   },
 
-  section: {
-    padding: "100px 20px",
-    maxWidth: "900px",
+  /* PROJECTS */
+  projectsSection: {
+    padding: "100px 40px",
+    maxWidth: "1200px",
     margin: "0 auto",
     textAlign: "center",
   },
 
-  text: {
-    marginTop: "20px",
-    lineHeight: "1.6",
-    color: "#374151",
+  projectsTitle: {
+    fontSize: "40px",
+    marginBottom: "10px",
+  },
+
+  projectsSubtitle: {
+    color: "#6b7280",
+    marginBottom: "50px",
+  },
+
+  grid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gap: "30px",
+  },
+
+  projectItem: {
+    position: "relative",
+    overflow: "hidden",
+    borderRadius: "10px",
+    cursor: "pointer",
+  },
+
+  projectImage: {
+    width: "100%",
+    height: "250px",
+    objectFit: "cover",
+    transition: "0.3s",
+  },
+
+  overlay: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    background: "rgba(0,0,0,0.6)",
+    color: "#fff",
+    padding: "20px",
+    opacity: 0,
+    transition: "0.3s",
   },
 };
 
