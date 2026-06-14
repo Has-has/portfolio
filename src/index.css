@@ -33,3 +33,7 @@ body {
   background-color: #38bdf8;
   color: black;
 }
+
+nav a:hover {
+  color: #000;
+}
