@@ -1,3 +1,12 @@
+
+<a
+  href="https://portfolio-nu-sepia-14.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Live Demo
+</a>
+
 function Projects() {
   return (
     <div style={{ padding: "40px" }}>
