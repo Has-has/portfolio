@@ -55,7 +55,6 @@ const styles = {
     justifyContent: "space-between",
     flexWrap: "wrap",
     minHeight: "90vh",
-    backgroundColor: "#f5efe6",
     Width: "100%",
     margin: "0 auto",
     padding: "100px 80px",
