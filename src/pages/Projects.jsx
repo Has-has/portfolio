@@ -106,6 +106,7 @@ const styles = {
   title: {
     marginBottom: "40px",
     fontSize: "2.5rem",
+    letterSpacing: "1px"
   },
 
   container: {
